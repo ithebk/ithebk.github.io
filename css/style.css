@@ -8,8 +8,8 @@ html {
 }
 
 .prof-box{
-	width:  50%;
-	height: 100%;
+	width:  40%;
+	height: 80%;
 	background: rgba(0,0,0,0.4);
 	padding: 40px;
 	color: white;
@@ -64,7 +64,7 @@ p{
     padding: 4px; 
     background: #dddddd;
     color:#000000;
-		margin-top:2px;
+		margin-top:4px;
 		display: inline-block;
     text-decoration: none !important;
     border-radius: 4px;
