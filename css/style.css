@@ -1,0 +1,75 @@
+html { 
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.prof-box{
+	width:  400px;
+	height: 450px;
+	background: rgba(0,0,0,0.4);
+	padding: 40px;
+	color: white;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+
+}
+
+.prof-pic{
+	border-radius: 50%;
+	max-width: 50%;
+   max-height: 50%;
+
+}
+
+h1{
+	font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px
+}
+
+h5{
+	padding: 2px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+p{
+	font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.social-icons a{
+	font-size: 25px;
+}
+
+.social-icons a{
+	color: white;
+}
+
+.line-break{
+	width: 355px;
+	margin: 0 auto; 
+	border-top: 1px solid white;
+
+}
+.round {
+    border: 0px solid #FFFFFF;
+    padding: 4px; 
+    background: #dddddd;
+    color:#000000;
+    text-decoration: none !important;
+    border-radius: 4px;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";       /* IE 8 */
+		filter: alpha(opacity=80);  /* IE 5-7 */
+		-moz-opacity: 0.8;          /* Netscape */
+		-khtml-opacity: 0.8;        /* Safari 1.x */
+		opacity: 0.8; 
+}
+
