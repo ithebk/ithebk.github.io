@@ -119,12 +119,15 @@ a{
   height: 120px;
   background-color: #EEEEEE;
   text-align: left;
+  border-radius: 4px;
 
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
-  background:
-    url('../images/bg.jpg') bottom right 15% no-repeat #46B6AC;
+  background-repeat: no-repeat;
+    background-position: center; 
+ background-color: #46B6AC
+
 }
 
 

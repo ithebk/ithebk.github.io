@@ -56,7 +56,7 @@ function handleLinkClicks(event,category) {
 
 <body>
 	<div class = "prof-box">
-		<img src="images/prof.png" class = "prof-pic">
+		<img src="images/prof.png" id="profile-pic" class = "prof-pic">
 		<h1>Bharath Kumar</h1>
 		<h5>Android Engineer at Autoninja | Grad CSE at PESIT</h5>
 		<h6>
@@ -82,72 +82,9 @@ Relational Database, Realm, MongoDB<br/>
 
 
 <h5>Projects</h5>
-	 <div class="mdl-grid center-items" align="center">
-
-
-  		<div class="demo-card-square mdl-card mdl-shadow--1dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">Easy Do</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Easy Do is an Android App which organises your To-Do, Reminders, Notes in a most efficient way
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://play.google.com/store/apps/details?id=easydo.ithebk" onclick="handleLinkClicks(this,'Easy Do');">
-      View on Google Play
-    </a>
-  </div>
-</div>
-
-
-	<div class="mdl-cell mdl-cell--4-col demo-card-square mdl-card mdl-shadow--1dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">Semantic Parser</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-   Processing Kannada Langauge sentence with the Morphological tags (Vibhatkis) to associated Kaaraka.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-     Source Code
-    </a>
-  </div>
-</div>
-
-
-<div class="mdl-cell mdl-cell--4-col demo-card-square mdl-card mdl-shadow--1dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">Sales CRM</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Sales convenient app to manage sales in car dealership from car booking to delivery through app.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://play.google.com/store/apps/details?id=com.salescrm.telephony" 
-    onclick="handleLinkClicks(this,'Sales CRM');">
-      View on Google Play
-    </a>
-  </div>
-</div>
-
-
-
-	<div class="demo-card-square mdl-card mdl-shadow--1dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">RangeBarVertical</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    The RangeBar is an enhanced SeekBar widget in vertical. It provides 2 thumbs between 0-N value.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/ITheBK/RangeBarVertical" onclick="handleLinkClicks(this,'RangeBarVertical');">
-      View
-    </a>
-  </div>
-</div>
-</div>
-
-
+	 <div class="mdl-grid center-items" id="div_card_parent" align="center">
+	 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
+	</div>
 <br/>
 <div class="line-break"></div>
 <br/>
