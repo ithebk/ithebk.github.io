@@ -11,7 +11,7 @@
 
 
 
-<div class="demo-card-square mdl-card mdl-shadow--1dp">
+/*<div class="demo-card-square mdl-card mdl-shadow--1dp">
   <div class="mdl-card__title mdl-card--expand">
     <h2 class="mdl-card__title-text">Hello world</h2>
   </div>
@@ -24,5 +24,5 @@
       View Updates
     </a>
   </div>
-</div>
+</div>*/
 

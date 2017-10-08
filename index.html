@@ -42,6 +42,14 @@
 	
   ga('send', 'pageview');
 
+function handleLinkClicks(event,category) {
+  ga('send', 'event', {
+    eventCategory: category,
+    eventAction: 'click',
+    eventLabel: event.target.href,
+    transport: 'beacon'
+  });
+}
 	</script>
 </head>
 	
@@ -52,7 +60,7 @@
 		<h1>Bharath Kumar</h1>
 		<h5>Android Engineer at Autoninja | Grad CSE at PESIT</h5>
 		<h6>
-		As a Android engineer in a startup called <a href="https://www.autoninja.net" style="color:#CFD8DC">Autoninja</a> developed B2B app called <b>Sales CRM</b> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
+		As a Android engineer in a startup called <a target="_blank" href="http://www.autoninja.net" onclick="handleLinkClicks(this,"autoninja")" style="color:#CFD8DC">Autoninja</a> developed B2B app called <b>Sales CRM</b> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
 
 Published an Notepad app when I was in my Engineering (Aug 2015).
 Recently published an app called <b>Easy Do</b> app for android, which helps to make daily tasks easier.<br/> 
