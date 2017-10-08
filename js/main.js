@@ -105,6 +105,7 @@ function createCard(cardTitle,cardDesc,imageUrl,action,url,color){
   anchorCardAction.className = classCardActionAnchor;
   anchorCardAction.innerHTML =action;
   anchorCardAction.href = url;
+  anchorCardAction.target = '_blank';
   anchorCardAction.addEventListener("onclic",handleLinkClicks(event,cardTitle));
 
   divCardAction.appendChild(anchorCardAction);
