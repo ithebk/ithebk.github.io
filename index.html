@@ -43,10 +43,11 @@
   ga('send', 'pageview');
 
 function handleLinkClicks(event,category) {
-
+	var eventLab = event==null?'':event.target.href;
   ga('send', 'event', {
     eventCategory: category,
     eventAction: 'click',
+    eventLabel: eventLab,
     transport: 'beacon'
   });
 }
