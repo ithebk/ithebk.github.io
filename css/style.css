@@ -119,9 +119,10 @@ a{
 	margin: 10px;
   width: 220px;
   height: 120px;
-  background-color: #EEEEEE;
+  background-color: #fff;
   text-align: left;
   border-radius: 4px;
+  border:1px dotted #303030;
 
 }
 .demo-card-square > .mdl-card__title {
