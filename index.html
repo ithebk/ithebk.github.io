@@ -43,11 +43,10 @@
   ga('send', 'pageview');
 
 function handleLinkClicks(event,category) {
-	var eventLab = event==null?'':event.target.href;
   ga('send', 'event', {
     eventCategory: category,
     eventAction: 'click',
-    eventLabel: eventLab,
+    eventLabel: event.target.href,
     transport: 'beacon'
   });
 }
@@ -60,38 +59,8 @@ function handleLinkClicks(event,category) {
 		<img src="images/prof.png" id="profile-pic" class = "prof-pic">
 		<h1>Bharath Kumar</h1>
 		<h5>Android Engineer at Autoninja | Grad CSE at PESIT</h5>
-		<h6>
-		As a Android engineer in a startup called <a target="_blank" href="http://www.autoninja.net" onclick="handleLinkClicks(this,'autoninja');" style="color:#303030">Autoninja</a> developed B2B app called <b>Sales CRM</b> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
-
-Published a Notepad app when I was in my Engineering (Aug 2015).
-Recently published an app called <b>Easy Do</b> app for android, which helps to make daily tasks easier.<br/> 
-
-<b>Programming Languages :</b><br/>
-Java - 1.5+ Years of Experience in Software Industry<br/>
-C,  Javascript, PHP, Python - Academic knowledge<br/>
-
-<b>Databases :</b><br/>
-Relational Database, Realm, MongoDB<br/>
-
-<b>Android App Development / 2.5+ Years in Development :</b><br/>
->Realm Database, Retrofit, Otto, Data Binding.<br/> 
->Custom UI Development<br/>
->Basics in Kotlin, MVP, RxAndroid.<br/>
->Basics in NDK
-</h6>
-		<div class="line-break"></div>
-
-
-<h5>Projects</h5>
-	 <div class="mdl-grid center-items" id="div_card_parent" align="center">
-	 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
-	</div>
-<br/>
-<div class="line-break"></div>
-<br/>
-<br/>
-<footer class="mdl-mini-footer nanna-footer" style="background-color: #eeeeee" >
-          <div class="mdl-mini-footer--left-section">
+        <br/>
+          <div class="mdl-mini-footer--left-section" style="background-color: rgba(100, 89, 100, 0.09);border-radius:4px;color:#303030;">
                   <a href="https://www.linkedin.com/in/ithebk" target="_blank" onclick="handleLinkClicks(this,'Linkedin');">
                   <button class="mdl-button mdl-js-button mdl-button--primary mdl-color-text--blue 800" data-upgraded=",MaterialButton">
                  linkedin
@@ -118,8 +87,38 @@ Relational Database, Realm, MongoDB<br/>
 
 
           </div>
-         
-        </footer>
+        
+		<h6>
+		As a Android engineer in a startup called <a target="_blank" href="http://www.autoninja.net" onclick="handleLinkClicks(this,'autoninja');" style="color:#303030">Autoninja</a> developed B2B app called <b>Sales CRM</b> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
+
+Published an Notepad app when I was in my Engineering (Aug 2015).
+Recently published an app called <b>Easy Do</b> app for android, which helps to make daily tasks easier.<br/> 
+
+<b>Programming Languages :</b><br/>
+Java - 1.5+ Years of Experience in Software Industry<br/>
+C,  Javascript, PHP, Python - Academic knowledge<br/>
+
+<b>Databases :</b><br/>
+Relational Database, Realm, MongoDB<br/>
+
+<b>Android App Development / 2.5+ Years in Development :</b><br/>
+>Realm Database, Retrofit, Otto, Data Binding.<br/> 
+>Custom UI Development<br/>
+>Basics in Kotlin, MVP, RxAndroid.<br/>
+>Basics in NDK
+</h6>
+		<div class="line-break"></div>
+
+
+<h5>Projects</h5>
+	 <div class="mdl-grid center-items" id="div_card_parent" align="center">
+	 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
+	</div>
+<br/>
+<div class="line-break"></div>
+<br/>
+<br/>
+
 		
 
 	</div>

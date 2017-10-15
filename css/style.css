@@ -139,7 +139,8 @@ a{
 }
 .nanna-footer{
 justify-content: center;
-border-radius: 4px;	
+border-radius: 4px;
+background-color: transparent;	
 }
 
 h6{
