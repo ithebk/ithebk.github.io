@@ -76,6 +76,15 @@ h5{
     margin: 10px;
 }
 
+h3{
+	color:#303030;
+	font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px
+}
+
 p{
 	font-weight: 200;
     letter-spacing: 1px;
