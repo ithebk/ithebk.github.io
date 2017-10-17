@@ -15,7 +15,7 @@
       var storageRef = storage.ref();
 
 
-var classCardMainDiv        = "demo-card-square mdl-card mdl-shadow--1dp";
+var classCardMainDiv        = "demo-card-square mdl-card mdl-shadow--0dp";
 var classCardTitleDiv       = "mdl-card__title mdl-card--expand";
 var classCardTitleHeader    = "mdl-card__title-text";
 var classCardDescDiv        = "mdl-card__supporting-text";

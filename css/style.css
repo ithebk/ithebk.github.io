@@ -122,7 +122,7 @@ a{
   background-color: #fff;
   text-align: left;
   border-radius: 4px;
-  border:1px dotted #303030;
+  border:1px solid rgba(0, 0, 0, 0.1);
 
 }
 .demo-card-square > .mdl-card__title {
