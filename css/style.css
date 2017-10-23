@@ -29,7 +29,7 @@ body:before {
 	padding: 40px;
 	color: white;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 70px;
 	text-align: center;
 	/*border-radius: 8px;*/
 
@@ -50,15 +50,23 @@ body:before {
 }
 }
 
+.prof-pic{
+	border-radius: 40%;
+	max-width: 40%;
+   max-height: 40%;
+   width: 30%;
 
+}
 
-
+@media (max-width: 512px)  and (min-resolution: 1.5dppx),
+       (max-width: 1024px) and (max-resolution: 1.5dppx) {
 .prof-pic{
 	border-radius: 40%;
 	max-width: 40%;
    max-height: 40%;
    width: 40%;
 
+}
 }
 
 h1{
