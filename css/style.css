@@ -37,7 +37,7 @@ body:before {
 @media (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   .prof-box{
-	width:  70%;
+	width:  80%;
 	height: 80%;
 	/*background: rgba(0,0,0,0.4);*/
 	padding: 40px;
