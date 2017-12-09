@@ -1,4 +1,4 @@
-html { 
+html {
   font-family: "Helvetica Neue", sans-serif;
 
 }
@@ -51,20 +51,20 @@ body:before {
 }
 
 .prof-pic{
-	border-radius: 40%;
-	max-width: 40%;
-   max-height: 40%;
-   width: 30%;
+	border-radius: 25%;
+	max-width: 25%;
+   max-height: 25%;
+   width:25%;
 
 }
 
 @media (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
 .prof-pic{
-	border-radius: 40%;
-	max-width: 40%;
-   max-height: 40%;
-   width: 40%;
+	border-radius: 30%;
+	max-width: 30%;
+   max-height: 30%;
+   width: 30%;
 
 }
 }
@@ -109,13 +109,13 @@ p{
 
 .line-break{
 	width: 50%;
-	margin: 0 auto; 
+	margin: 0 auto;
 	border-top: 1px solid #808080;
 
 }
 .round {
     border: 0px solid #FFFFFF;
-    padding: 4px; 
+    padding: 4px;
     background: #dddddd;
     color:#000000;
 		margin-top:4px;
@@ -126,7 +126,7 @@ p{
 		filter: alpha(opacity=80);  /* IE 5-7 */
 		-moz-opacity: 0.8;          /* Netscape */
 		-khtml-opacity: 0.8;        /* Safari 1.x */
-		opacity: 0.8; 
+		opacity: 0.8;
 }
 a{
  text-decoration: none !important;
@@ -146,7 +146,7 @@ a{
 .demo-card-square > .mdl-card__title {
   color: #fff;
   background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
  background-color: #46B6AC
 
 }
@@ -158,7 +158,7 @@ a{
 .nanna-footer{
 justify-content: center;
 border-radius: 4px;
-background-color: transparent;	
+background-color: transparent;
 }
 
 h6{	text-align: justify;
@@ -170,4 +170,3 @@ h6{	text-align: justify;
 .mdl-button>.mdl-js-button{
  color:#FF0F00;
 }
-

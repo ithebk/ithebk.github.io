@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-pink.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
 
 
 
-	
+
+
 	<script>
 	function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -28,8 +28,8 @@
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 	}
-	var utm_src = getParameterByName('utm_src'); 
-	
+	var utm_src = getParameterByName('utm_src');
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -40,7 +40,7 @@
 		ga('set', 'campaignSource', utm_src);
 		ga('set', 'campaignMedium', 'cpc');
 	}
-	
+
   ga('send', 'pageview');
 
 function handleLinkClicks(event,category) {
@@ -53,7 +53,7 @@ function handleLinkClicks(event,category) {
 }
 	</script>
 </head>
-	
+
 
 <body>
 	<div class = "prof-box">
@@ -62,92 +62,116 @@ function handleLinkClicks(event,category) {
 		<h1>BHARATH KUMAR</h1>
 		<h3>Bangalore, India</h3>
      <div class="mdl-mini-footer--left-section" style="text-align:left;width: 100%;margin: 0"><br/>
+
+			 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      <a href="#starks-panel" class="mdl-tabs__tab is-active">About</a>
+      <a href="#lannisters-panel" class="mdl-tabs__tab">Projects</a>
+      <a href="#targaryens-panel" class="mdl-tabs__tab">Resume</a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="starks-panel">
+		<br/>
 		<h3><div style="padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
-      Android Engineer at 
-			<a target="_blank" href="http://www.autoninja.net" 
-			   onclick="handleLinkClicks(this,'autoninja');">Autoninja</a><span style="font-size: 13px;">(2016-PRESENT)</span> <img align="right" src="images/autoninja-logo.png" style="width:36px;height:36px" />
-         </div> </h3><br>
-          <h3>
-         <div style="padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);"> Grad B.E(CSE) from 
-			<a target="_blank" href="https://www.pes.edu" 
-			   onclick="handleLinkClicks(this,'Pesit');">PES Institute of Technology</a><span style="font-size: 13px;">(2012-2016)</span><img align="right" src="images/pesit-logo.jpg" style="width:36px;height:36px" /></div></h3>
-      
-      </div>
-      <br/>
-      <br/>
-          <div class="mdl-mini-footer--left-section" style="text-align:justify;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
-                  <a href="docs/Bharath-Resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
-                  <button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-                 Resume
-                  </button>
-                  </a>
-                  /
-                  <a href="mailto:bharath7242@gmail.com" target="_blank" onclick="handleLinkClicks(this,'Mail To');">
-                  <button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-                 Mail
-                  </button>
-                  </a>
-                  /
+			Android Engineer at
+			<a target="_blank" href="http://www.autoninja.net"
+				 onclick="handleLinkClicks(this,'autoninja');">Autoninja</a><span style="font-size: 13px;">(2016-PRESENT)</span> <img align="right" src="images/autoninja-logo.png" style="width:36px;height:36px" />
+			 </div> </h3><br/>
+
+					<h3>
+				 <div style="padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
+					  Grad B.E(CSE) from
+			<a target="_blank" href="https://www.pes.edu"
+				 onclick="handleLinkClicks(this,'Pesit');">PES Institute of Technology</a>
+				 <span style="font-size: 13px;">(2012-2016)</span>
+				 <img align="right" src="images/pesit-logo.jpg" style="width:36px;height:36px" />
+
+			 	</div>
+
+			</h3>
+
+
+			<br/>
+					<div class="mdl-mini-footer--left-section" style="text-align:justify;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
+									<a href="docs/Bharath-Resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
+									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+								 Resume
+									</button>
+									</a>
+									/
+									<a href="mailto:bharath7242@gmail.com" target="_blank" onclick="handleLinkClicks(this,'Mail To');">
+									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+								 Mail
+									</button>
+									</a>
+									/
 		 <a href="https://www.linkedin.com/in/ithebk" target="_blank" onclick="handleLinkClicks(this,'Linkedin');">
-                  <button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-                 linkedin
-                  </button>
-                  </a>
-                  /
-                 <a href="https://github.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Github');">
-                  <button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-                  Github
-                  </button>
-                  </a>
-                  /
-                   <a href="https://stackoverflow.com/users/4491620/bharath-kumar" onclick="handleLinkClicks(this,'Stackoverflow');" target="_blank">
-                  <button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-                  stackoverflow
-                  </button>
-                  </a>
-                  /
-                  <a href="https://www.facebook.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Facebook');">
-                  <button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-                  Facebook
-                  </button>
-                  </a>
+									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+								 linkedin
+									</button>
+									</a>
+									/
+								 <a href="https://github.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Github');">
+									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+									Github
+									</button>
+									</a>
+									/
+									 <a href="https://stackoverflow.com/users/4491620/bharath-kumar" onclick="handleLinkClicks(this,'Stackoverflow');" target="_blank">
+									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+									stackoverflow
+									</button>
+									</a>
+									/
+									<a href="https://www.facebook.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Facebook');">
+									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+									Facebook
+									</button>
+									</a>
 
 
-          </div>
-        
+					</div>
+
 		<h6>
 		I'm a Software Developer, working as an Android engineer in a startup called <a target="_blank" href="http://www.autoninja.net" onclick="handleLinkClicks(this,'autoninja');">Autoninja</a> developed B2B app called <b>Sales CRM</b> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
 
 Published a Notepad app when I was in my Engineering (Aug 2015).
-Recently published an app called <b>Easy Do</b> app for android, which helps to make daily tasks easier.<br/> 
+Recently published an app called <b>Easy Do</b> app for android, which helps to make daily tasks easier.<br/>
 <br/>
 <b>Programming Languages :</b><br/>
 • Java - 1.5+ Years of Experience in Software Industry<br/>
 • C,  Javascript, PHP, Python - Academic knowledge<br/>
+• NodeJS<br/>
 
 <b>Databases :</b><br/>
 • Relational Database, Realm, MongoDB<br/>
 
 <b>Android App Development / 2.5+ Years in Development :</b><br/>
-• Realm Database, Retrofit, Otto, Data Binding.<br/> 
+• Realm Database, Retrofit, Otto, Data Binding.<br/>
 • Custom UI Development<br/>
 • Basics in Kotlin, MVP, RxAndroid.<br/>
 • Basics in NDK
 </h6>
+</div>
 
-<div style="margin-top:25px;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
-<h5>Projects</h5>
-	 <div class="mdl-grid center-items" id="div_card_parent" align="center">
-	 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
-	</div>
-<br/>
-</div>>
-<br/>
-<br/>
+  <div class="mdl-tabs__panel" id="lannisters-panel">
+		<div style="margin-top:25px;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
+			 <div class="mdl-grid center-items" id="div_card_parent" align="center">
+			 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
+			</div>
+		<br/>
+		</div>
+  </div>
 
-		
+  <div class="mdl-tabs__panel" id="targaryens-panel">
+				<br/>
+<embed src="docs/Bharath-Resume.pdf" type="application/pdf"
+ height="600px" width="100%">
+  </div>
+</div>
 
-	</div>
+</div>
+</div>
 
 	  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
