@@ -165,10 +165,16 @@ Recently published an app called <b>Easy Do</b> app for android, which helps to 
 
   <div class="mdl-tabs__panel" id="targaryens-panel">
 				<br/>
-				<object data="docs/Bharath-Resume.pdf" type="application/pdf" width="100%" height="600px">
-				  <p>Your web browser doesn't have a PDF plugin.
-				  Instead you can <a href="docs/Bharath-Resume.pdf">Clik here to
-				  download the PDF file.</a></p>
+				<object id="object-resume" data="docs/Bharath-Resume.pdf" type="application/pdf" width="100%" height="600px">
+
+
+					<h3><div style="padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
+						Your web browser doesn't have a PDF plugin.
+					  Instead you can
+						<a target="_blank" href="docs/Bharath-Resume.pdf"
+							 onclick="handleLinkClicks(this,'resume-force-download');">Download here</a>
+						 </div> </h3><br/>
+
 				</object>
   </div>
 </div>
