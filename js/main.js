@@ -39,7 +39,7 @@ function createCard(cardTitle,cardDesc,imageUrl,action,url,color){
   headerCardTitle.className = classCardTitleHeader;
   headerCardTitle.innerHTML = cardTitle;
 
-  
+
   divCardTitle.appendChild(headerCardTitle);
 
   divCardMain.appendChild(divCardTitle);
@@ -54,7 +54,7 @@ function createCard(cardTitle,cardDesc,imageUrl,action,url,color){
       }
     }
   if(imageUrl!=null){
-        
+
               divCardTitle.style.backgroundImage = 'url(images/loader.gif)';
               var imagesRef = storageRef.child('images/'+imageUrl);
               console.log("storage")
@@ -108,7 +108,7 @@ function createCard(cardTitle,cardDesc,imageUrl,action,url,color){
   anchorCardAction.target = '_blank';
   anchorCardAction.onclick = function(){
 	handleLinkClicks(event,cardTitle)};
-  
+
 
   divCardAction.appendChild(anchorCardAction);
   divCardMain.appendChild(divCardAction);
@@ -124,6 +124,12 @@ function init(){
 
         //
 
+        document.getElementById('force-download-resume').onclick = function() {
+          handleLinkClicks(event,'force-download-resume');
+          window.open('docs/Bharath-Resume.pdf');
+
+        };
+
         var data = firebase.database().ref('projects/').orderByChild('starCount');
         data.on('value', function(snapshot) {
             divParent.innerHTML = "";
@@ -136,8 +142,8 @@ function init(){
                 var tempDesc = null;
                 var tempImg =  null;
                 var tempTitle = null;
-            
-            
+
+
                 var tempStatus = null;
                 var tempColor = null;
                 var tempUrl = null;
@@ -154,7 +160,7 @@ function init(){
                     else if (innerElem.key=="title") {
                       tempTitle=innerElem.val();
                     }
-                    
+
                     else if (innerElem.key=="status") {
                       tempStatus = innerElem.val();
                     }
@@ -169,9 +175,9 @@ function init(){
                     }
                     //var id,var title,var img,var desc
                 });
-               
-                  
-                  
+
+
+
                   if(tempStatus==1){
                     console.log(tempTitle);
                     createCard(tempTitle,tempDesc,tempImg,tempAction,tempUrl,tempColor);
@@ -190,5 +196,3 @@ function init(){
       });
       }
       init();
-
-
