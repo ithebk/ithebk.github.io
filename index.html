@@ -41,7 +41,7 @@
 		ga('set', 'campaignMedium', 'cpc');
 	}
 
- ga('send', 'pageview');
+// ga('send', 'pageview');
 
 function handleLinkClicks(event,category) {
   ga('send', 'event', {
@@ -57,17 +57,18 @@ function handleLinkClicks(event,category) {
 
 <body>
 	<div class = "prof-box">
-		<img src="images/prof.png" id="profile-pic" class = "prof-pic">
+		<img src="images/prof.jpg" id="profile-pic" class = "prof-pic">
     <br/> <br/>
 		<h1>BHARATH KUMAR</h1>
-		<h3>Bangalore, India</h3>
+		<h3>Software Engineer</h3>
      <div class="mdl-mini-footer--left-section" style="text-align:left;width: 100%;margin: 0"><br/>
 
 			 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
   <div class="mdl-tabs__tab-bar">
       <a href="#about" class="mdl-tabs__tab is-active">About</a>
       <a href="#projects" class="mdl-tabs__tab">Projects</a>
-			<div class="mdl-tabs__tab" id="force-download-resume" style="cursor: pointer;">Resume</div>
+			  <a href="#contact" class="mdl-tabs__tab" onclick="handleLinkClicks(this,'Contact');">Contact</a>
+			<!-- <div class="mdl-tabs__tab" id="force-download-resume" style="cursor: pointer;">Resume</div> -->
 
   </div>
 
@@ -91,47 +92,6 @@ function handleLinkClicks(event,category) {
 
 			</h3>
 
-
-			<br/>
-					<div class="mdl-mini-footer--left-section" style="text-align:justify;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
-									<a href="docs/Bharath-Resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
-									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-								 Resume
-									</button>
-									</a>
-									/
-									<a href="mailto:bharath7242@gmail.com" target="_blank" onclick="handleLinkClicks(this,'Mail To');">
-									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-								 Mail
-									</button>
-									</a>
-									/
-		 <a href="https://www.linkedin.com/in/ithebk" target="_blank" onclick="handleLinkClicks(this,'Linkedin');">
-									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-								 linkedin
-									</button>
-									</a>
-									/
-								 <a href="https://github.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Github');">
-									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-									Github
-									</button>
-									</a>
-									/
-									 <a href="https://stackoverflow.com/users/4491620/bharath-kumar" onclick="handleLinkClicks(this,'Stackoverflow');" target="_blank">
-									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-									stackoverflow
-									</button>
-									</a>
-									/
-									<a href="https://www.facebook.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Facebook');">
-									<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-									Facebook
-									</button>
-									</a>
-
-
-					</div>
 
 		<h6>
 		I'm a Software Developer, working as an Android engineer in a startup called <a target="_blank" href="http://www.autoninja.net" onclick="handleLinkClicks(this,'autoninja');">Autoninja</a> developed B2B app called <b>Sales CRM</b> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
@@ -160,11 +120,64 @@ Recently published an app called <b>Easy Do</b> app for android, which helps to 
 			 <div class="mdl-grid center-items" id="div_card_parent" align="center">
 			 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
 			</div>
-		<br/>
+
 		</div>
+			<br/>
   </div>
+
+	<div class="mdl-tabs__panel" id="contact">
+
+		<div style="margin-top:25px;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
+<h3>If you have any questions or suggestions, please don't hesitate to contact.</h3>
+<h3><b>Skype</b> : ITheBK</h3>
+<h3><b>Hangouts</b> : bharath7242@gmail[.]com</h3>
+<h3><b>Phone</b> : [+][9][1] [9][9][7][2][7][0][5][0][7][1]</h3>
+<h3><b>Email</b> : bharath7242@gmail[.]com</h3>
+<h3><b>Address</b> : Bangalore, India</h3>
 </div>
 
+<br/>
+	</div>
+</div>
+<div class="mdl-mini-footer--left-section" style="background-color:rgba(238, 238, 238, 0.4);text-align:justify;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(0, 0, 0, 0.1);">
+				<a href="docs/Bharath-Resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+			 Resume
+				</button>
+				</a>
+				/
+				<a href="mailto:bharath7242@gmail.com" target="_blank" onclick="handleLinkClicks(this,'Mail To');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+			 Mail
+				</button>
+				</a>
+				/
+<a href="https://www.linkedin.com/in/ithebk" target="_blank" onclick="handleLinkClicks(this,'Linkedin');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+			 linkedin
+				</button>
+				</a>
+				/
+			 <a href="https://github.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Github');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+				Github
+				</button>
+				</a>
+				/
+				 <a href="https://stackoverflow.com/users/4491620/bharath-kumar" onclick="handleLinkClicks(this,'Stackoverflow');" target="_blank">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+				stackoverflow
+				</button>
+				</a>
+				/
+				<a href="https://www.facebook.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Facebook');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+				Facebook
+				</button>
+				</a>
+
+
+</div>
 </div>
 </div>
 

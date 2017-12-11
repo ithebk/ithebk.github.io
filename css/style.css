@@ -51,20 +51,24 @@ body:before {
 }
 
 .prof-pic{
-	border-radius: 25%;
+	border-radius: 50%;
 	max-width: 25%;
    max-height: 25%;
    width:25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
 @media (max-width: 512px)  and (min-resolution: 1.5dppx),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
 .prof-pic{
-	border-radius: 30%;
+	border-radius: 50%;
 	max-width: 30%;
    max-height: 30%;
    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 }
