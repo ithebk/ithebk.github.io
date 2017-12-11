@@ -123,12 +123,13 @@ function createCard(cardTitle,cardDesc,imageUrl,action,url,color){
 function init(){
 
         //
-
+	/*
         document.getElementById('force-download-resume').onclick = function() {
           handleLinkClicks(event,'force-download-resume');
           window.open('docs/Bharath-Resume.pdf');
 
         };
+	*/
 
         var data = firebase.database().ref('projects/').orderByChild('starCount');
         data.on('value', function(snapshot) {
