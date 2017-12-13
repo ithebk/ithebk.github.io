@@ -174,3 +174,27 @@ h6{	text-align: justify;
 .mdl-button>.mdl-js-button{
  color:#FF0F00;
 }
+.blog-list{
+  margin-top: 10px;
+  background-color: #EEEEEE;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  text-align: left;
+}
+li {
+  padding: 10px;
+  overflow: auto;
+}
+li:hover {
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.list-header{
+  margin: 0px;
+}
