@@ -55,7 +55,11 @@ function handleLinkClicks(event,category) {
 </head>
 
 
+
 <body>
+
+	<div id="particles-js"></div>
+	
 	<div class = "prof-box">
 		<img src="images/prof.jpg" id="profile-pic" class = "prof-pic">
     <br/> <br/>
@@ -77,7 +81,7 @@ function handleLinkClicks(event,category) {
 		<br/>
 		<h3><div style="padding:10px;border-radius:4px;color:#eee;border:1px solid rgba(255, 255, 255, 0.1);">
 			Android Engineer at
-			<a target="_blank" href="http://www.autoninja.net"
+			<a contenteditable="false" target="_blank" href="http://www.autoninja.net"
 				 onclick="handleLinkClicks(this,'autoninja');">Autoninja</a><span style="font-size: 13px;">(2016-PRESENT)</span> <img align="right" src="images/autoninja-logo.png" style="width:36px;height:36px" />
 			 </div> </h3><br/>
 
@@ -135,7 +139,7 @@ Recently published an app called <a target="_blank" href="https://play.google.co
 	    <li>
 				<a style="text-decoration: inherit;
     color:rgb(185, 185, 185);
-    cursor: auto;" href="http://helloandroiddev.blogspot.in/2017/09/checking-new-app-update-using-firebase.html">
+    cursor: auto;" href="https://helloandroiddev.blogspot.in/2017/09/checking-new-app-update-using-firebase.html">
 	      <h4 class="list-header">Firebase Remote Config</h4>
 	      <p>How to use firebase remote config to create a trigger on app on pushing app updates
 				</p>
@@ -178,7 +182,7 @@ Recently published an app called <a target="_blank" href="https://play.google.co
 <br/>
 	</div>
 </div>
-<div class="mdl-mini-footer--left-section" style="color:#eee;background-color:rgba(0, 0, 0, 0.4);text-align:justify;padding:10px;border-radius:4px;color:#eee;border:1px solid rgba(0, 0, 0, 0.1);">
+<div class="mdl-mini-footer--left-section" style="color:#eee;background-color:#000;text-align:justify;padding:10px;border-radius:4px;color:#eee;border:1px solid rgba(0, 0, 0, 0.1);">
 				<a href="docs/bharath_resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
 				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
 			 Resume
@@ -225,6 +229,12 @@ Recently published an app called <a target="_blank" href="https://play.google.co
 </div>
 </div>
 </div>
+
+
+
+
+<script src="js/particles.js"></script>
+
 
 	  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
