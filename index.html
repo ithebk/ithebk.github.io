@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	  <title>ITheBK • Bharath Kumar</title>
- 	<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="description" content="Software Engineer | Android Engineer in Bengaluru, India">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 
-   <link rel="icon" type="image/ico" href="images/favicon.ico">
-    <link rel="shortcut-icon" type="image/ico" href="images/favicon.ico">
- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_green.min.css" />
+<head>
+	<title>ITheBK • Bharath Kumar</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Software Engineer | Android Engineer in Bengaluru, India">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<link rel="shortcut-icon" type="image/ico" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_green.min.css" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -19,38 +21,40 @@
 
 
 	<script>
-	function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
-	var utm_src = getParameterByName('utm_src');
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		var utm_src = getParameterByName('utm_src');
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-67506307-3', 'auto');
-	ga('set', 'campaignName', 'mygrandcampaign');
-	if(utm_src=="fb"||utm_src=="twitter"||utm_src=="insta"||utm_src=="ox"||utm_src=="gplus"||utm_src=="linkedin"||utm_src=="abtme"){
-		ga('set', 'campaignSource', utm_src);
-		ga('set', 'campaignMedium', 'cpc');
-	}
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-67506307-3', 'auto');
+		ga('set', 'campaignName', 'mygrandcampaign');
+		if (utm_src == "fb" || utm_src == "twitter" || utm_src == "insta" || utm_src == "ox" || utm_src == "gplus" || utm_src == "linkedin" || utm_src == "abtme") {
+			ga('set', 'campaignSource', utm_src);
+			ga('set', 'campaignMedium', 'cpc');
+		}
 
- ga('send', 'pageview');
+		ga('send', 'pageview');
 
-function handleLinkClicks(event,category) {
-  ga('send', 'event', {
-    eventCategory: category,
-    eventAction: 'click',
-    eventLabel: event.target.href,
-    transport: 'beacon'
-  });
-}
+		function handleLinkClicks(event, category) {
+			ga('send', 'event', {
+				eventCategory: category,
+				eventAction: 'click',
+				eventLabel: event.target.href,
+				transport: 'beacon'
+			});
+		}
 	</script>
 </head>
 
@@ -59,187 +63,209 @@ function handleLinkClicks(event,category) {
 <body>
 
 	<div id="particles-js"></div>
-	
-	<div class = "prof-box">
-		<img src="images/prof.jpg" id="profile-pic" class = "prof-pic">
-    <br/> <br/>
+
+	<div class="prof-box">
+		<img src="images/prof.jpg" id="profile-pic" class="prof-pic">
+		<br /> <br />
 		<h1>BHARATH KUMAR</h1>
 		<h3 style="color: aqua;">Senior Software Engineer</h3>
-     <div class="mdl-mini-footer--left-section" style="text-align:left;width: 100%;margin: 0"><br/>
+		<div class="mdl-mini-footer--left-section" style="text-align:left;width: 100%;margin: 0"><br />
 
-			 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-  <div class="mdl-tabs__tab-bar" style="border:0;">
-      <a style="color:#eeeeee" href="#about" class="mdl-tabs__tab is-active" onclick="handleLinkClicks(this,'About Tab');">About</a>
-      <a  style="color:#eeeeee" href="#projects" class="mdl-tabs__tab" onclick="handleLinkClicks(this,'Project Tab');">Projects</a>
-			  <a  style="color:#eeeeee" href="#blog" class="mdl-tabs__tab" onclick="handleLinkClicks(this,'Blog Tab');">Posts</a>
-			  <a  style="color:#eeeeee" href="#contact" class="mdl-tabs__tab" onclick="handleLinkClicks(this,'Contact Tab');">Contact</a>
-			<!-- <div class="mdl-tabs__tab" id="force-download-resume" style="cursor: pointer;">Resume</div> -->
+			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+				<div class="mdl-tabs__tab-bar" style="border:0;">
+					<a style="color:#eeeeee" href="#about" class="mdl-tabs__tab is-active"
+						onclick="handleLinkClicks(this,'About Tab');">About</a>
+					<a style="color:#eeeeee" href="#projects" class="mdl-tabs__tab"
+						onclick="handleLinkClicks(this,'Project Tab');">Projects</a>
+					<a style="color:#eeeeee" href="#blog" class="mdl-tabs__tab"
+						onclick="handleLinkClicks(this,'Blog Tab');">Posts</a>
+					<a style="color:#eeeeee" href="#contact" class="mdl-tabs__tab"
+						onclick="handleLinkClicks(this,'Contact Tab');">Contact</a>
+					<!-- <div class="mdl-tabs__tab" id="force-download-resume" style="cursor: pointer;">Resume</div> -->
 
-  </div>
+				</div>
 
-  <div class="mdl-tabs__panel is-active" id="about">
-		<br/>
-		<h3><div style="padding:10px;border-radius:4px;color:#eee;border:1px solid rgba(255, 255, 255, 0.1);">
-			Android Engineer at
-			<a contenteditable="false" target="_blank" href="http://www.autoninja.net"
-				 onclick="handleLinkClicks(this,'autoninja');">Autoninja</a><span style="font-size: 13px;">(2016-PRESENT)</span> <img align="right" src="images/autoninja-logo.png" style="width:36px;height:36px" />
-			 </div> </h3><br/>
+				<div class="mdl-tabs__panel is-active" id="about">
+					<br />
+					<h3>
+						<div class="neumorphism">
+							Android Engineer at
+							<a contenteditable="false" target="_blank" href="http://www.autoninja.net"
+								onclick="handleLinkClicks(this,'autoninja');">Autoninja</a><span
+								style="font-size: 13px;">(2016-PRESENT)</span> <img align="right"
+								src="images/autoninja-logo.png" style="width:36px;height:36px" />
+						</div>
+					</h3><br />
 
 					<h3>
-				 <div style="padding:10px;border-radius:4px;color:#eee;border:1px solid rgba(255, 255, 255, 0.1);">
-					  Grad B.E(CSE) from
-			<a target="_blank" href="https://www.pes.edu"
-				 onclick="handleLinkClicks(this,'Pesit');">PES Institute of Technology</a>
-				 <span style="font-size: 13px;">(2012-2016)</span>
-				 <img align="right" src="images/pesit-logo.jpg" style="width:36px;height:36px" />
+						<div class="neumorphism">
+							Grad B.E(CSE) from
+							<a target=" _blank" href="https://www.pes.edu" onclick="handleLinkClicks(this,'Pesit');">PES
+								Institute of Technology</a>
+							<span style="font-size: 13px;">(2012-2016)</span>
+							<img align="right" src="images/pesit-logo.jpg" style="width:36px;height:36px" />
 
-			 	</div>
+						</div>
 
-			</h3>
+					</h3>
 
 
-		<h6>
-		I'm a Software Developer, working as an Android engineer in a startup called <a target="_blank" href="http://www.autoninja.net" onclick="handleLinkClicks(this,'autoninja');">Autoninja(An ICICI Lombard Company)</a> developed B2B app called <a target="_blank" href="https://play.google.com/store/apps/details?id=com.salescrm.telephony" onclick="handleLinkClicks(this,'SalesCRM');">Sales CRM</a> from scratch, took ownership for the architecture of the app. App empowers sales in Car Dealership.<br/>
+					<h6 class="neumorphism">
+						I'm a Software Developer, working as an Android engineer in a startup called <a target="_blank"
+							href="http://www.autoninja.net" onclick="handleLinkClicks(this,'autoninja');">Autoninja(An
+							ICICI Lombard Company)</a> developed B2B app called <a target="_blank"
+							href="https://play.google.com/store/apps/details?id=com.salescrm.telephony"
+							onclick="handleLinkClicks(this,'SalesCRM');">Sales CRM</a> from scratch, took ownership for
+						the architecture of the app. App empowers sales in Car Dealership.<br />
 
-Published a Notepad app when I was in my Engineering (Aug 2015).
-Recently published an app called <a target="_blank" href="https://play.google.com/store/apps/details?id=easydo.ithebk" onclick="handleLinkClicks(this,'Easy Do');">Easy Do</a>  app for android(10K+ Downloads | 4.5★), which helps to make daily tasks easier.<br/>
-<br/>
-</h6>
-</div>
+						Published a Notepad app when I was in my Engineering (Aug 2015).
+						Recently published an app called <a target="_blank"
+							href="https://play.google.com/store/apps/details?id=easydo.ithebk"
+							onclick="handleLinkClicks(this,'Easy Do');">Easy Do</a> app for android(10K+ Downloads |
+						4.5★), which helps to make daily tasks easier.<br />
+						<br />
+					</h6>
+				</div>
 
-  <div class="mdl-tabs__panel" id="projects">
-		<div style="margin-top:25px;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(255, 255, 255, 0.1);">
-			 <div class="mdl-grid center-items" id="div_card_parent" align="center">
-			 	<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
-			</div>
+				<div class="mdl-tabs__panel" id="projects">
+					<div style="margin-top:25px;color:#000;">
+						<div class="mdl-grid center-items" id="div_card_parent" align="center">
+							<div class="mdl-spinner mdl-js-spinner is-active" id="loader"></div>
+						</div>
 
-		</div>
-			<br/>
-  </div>
+					</div>
+					<br />
+				</div>
 
-	<div class="mdl-tabs__panel" id="contact">
+				<div class="mdl-tabs__panel" id="contact">
 
-		<div style="margin-top:25px;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(255, 255, 255, 0.1);">
-<h3><b>Skype</b> : ITheBK</h3>
-<h3><b>Hangouts</b> : bharath7242@gmail[.]com</h3>
-<h3><b>Phone</b> : [+][9][1] [9][9][7][2][7][0][5][0][7][1]</h3>
-<h3><b>Email</b> : bharath7242@gmail[.]com</h3>
-<h3><b>Address</b> : Bangalore, India</h3>
-</div>
+					<div class="neumorphism" style="margin-top:25px;color:#000;">
+						<h3><b>Skype</b> : ITheBK</h3>
+						<h3><b>Hangouts</b> : bharath7242@gmail[.]com</h3>
+						<h3><b>Phone</b> : [+][9][1] [9][9][7][2][7][0][5][0][7][1]</h3>
+						<h3><b>Email</b> : bharath7242@gmail[.]com</h3>
+						<h3><b>Address</b> : Bangalore, India</h3>
+					</div>
 
-<br/>
-	</div>
+					<br />
+				</div>
 
-	<div class="mdl-tabs__panel" id="blog">
+				<div class="mdl-tabs__panel" id="blog">
 
-		<div style="margin-top:25px;padding:10px;border-radius:4px;color:#000;border:1px solid rgba(255, 255, 255, 0.1);">
-			<div class="mdl-grid center-items" id="div_card_parent_blog">
+					<div class="neumorphism" style="margin-top:25px;color:#000;">
+						<div class="mdl-grid center-items" id="div_card_parent_blog">
 
-	  <ul>
-	    <li>
-				<a style="text-decoration: inherit;
+							<ul>
+								<li>
+									<a style="text-decoration: inherit;
     color:rgb(185, 185, 185);
     cursor: auto;" href="https://helloandroiddev.blogspot.in/2017/09/checking-new-app-update-using-firebase.html">
-	      <h4 class="list-header">Firebase Remote Config</h4>
-	      <p>How to use firebase remote config to create a trigger on app on pushing app updates
-				</p>
-				</a>
-				<!-- Basic Chip -->
-<span class="mdl-chip">
-    <span class="mdl-chip__text azure">Android</span>
-</span> <span class="mdl-chip">
-    <span class="mdl-chip__text azure">Firebase</span>
-</span>
+										<h4 class="list-header">Firebase Remote Config</h4>
+										<p>How to use firebase remote config to create a trigger on app on pushing app
+											updates
+										</p>
+									</a>
+									<!-- Basic Chip -->
+									<span class="mdl-chip">
+										<span class="mdl-chip__text azure">Android</span>
+									</span> <span class="mdl-chip">
+										<span class="mdl-chip__text azure">Firebase</span>
+									</span>
 
-	    </li>
+								</li>
 
-<hr></hr>
+								<hr>
+								</hr>
 
-<li>
-				<a style="text-decoration: inherit;
+								<li>
+									<a style="text-decoration: inherit;
     color: rgb(185, 185, 185);
     cursor: auto;" href="https://goo.gl/cJZ442">
-	      <h4 class="list-header">How to stop a service at a specific time of the day?</h4>
-	      <p>Click here to see my StackOverflow answer.
-				</p>
-				</a>
-				<!-- Basic Chip -->
-<span class="mdl-chip">
-    <span class="mdl-chip__text azure">Android</span>
-</span> <span class="mdl-chip">
-    <span class="mdl-chip__text azure">Android-Service</span>
-</span>
+										<h4 class="list-header">How to stop a service at a specific time of the day?
+										</h4>
+										<p>Click here to see my StackOverflow answer.
+										</p>
+									</a>
+									<!-- Basic Chip -->
+									<span class="mdl-chip">
+										<span class="mdl-chip__text azure">Android</span>
+									</span> <span class="mdl-chip">
+										<span class="mdl-chip__text azure">Android-Service</span>
+									</span>
 
-	    </li>
+								</li>
 
 
-	  </ul>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+				<br />
+			</div>
+		</div>
+		<div class="mdl-mini-footer--left-section neumorphism" style="color:#eee;text-align:justify;color:#eee;">
+			<a href="docs/bharath_resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					Resume
+				</button>
+			</a>
+			/
+			<a href="mailto:bharath7242@gmail.com" target="_blank" onclick="handleLinkClicks(this,'Mail To');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					Mail
+				</button>
+			</a>
+			/
+			<a href="https://play.google.com/store/apps/details?id=easydo.ithebk" target="_blank"
+				onclick="handleLinkClicks(this,'playstore');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					playstore
+				</button>
+			</a>
+			/
+			<a href="https://www.linkedin.com/in/ithebk" target="_blank" onclick="handleLinkClicks(this,'Linkedin');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					linkedin
+				</button>
+			</a>
+			/
+			<a href="https://github.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Github');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					Github
+				</button>
+			</a>
+			/
+			<a href="https://stackoverflow.com/users/4491620/bharath-kumar"
+				onclick="handleLinkClicks(this,'Stackoverflow');" target="_blank">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					stackoverflow
+				</button>
+			</a>
+			/
+			<a href="https://www.facebook.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Facebook');">
+				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
+					Facebook
+				</button>
+			</a>
+
+
+		</div>
+	</div>
 	</div>
 
-		 </div>
-</div>
-
-<br/>
-	</div>
-</div>
-<div class="mdl-mini-footer--left-section" style="color:#eee;background-color:#000;text-align:justify;padding:10px;border-radius:4px;color:#eee;border:1px solid rgba(0, 0, 0, 0.1);">
-				<a href="docs/bharath_resume.pdf" target="_blank" onclick="handleLinkClicks(this,'Resume');">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-			 Resume
-				</button>
-				</a>
-				/
-				<a href="mailto:bharath7242@gmail.com" target="_blank" onclick="handleLinkClicks(this,'Mail To');">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-			 Mail
-				</button>
-				</a>
-				/
-<a href="https://play.google.com/store/apps/details?id=easydo.ithebk" target="_blank" onclick="handleLinkClicks(this,'playstore');">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-			 playstore
-				</button>
-				</a>
-				/
-<a href="https://www.linkedin.com/in/ithebk" target="_blank" onclick="handleLinkClicks(this,'Linkedin');">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-			 linkedin
-				</button>
-				</a>
-				/
-			 <a href="https://github.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Github');">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-				Github
-				</button>
-				</a>
-				/
-				 <a href="https://stackoverflow.com/users/4491620/bharath-kumar" onclick="handleLinkClicks(this,'Stackoverflow');" target="_blank">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-				stackoverflow
-				</button>
-				</a>
-				/
-				<a href="https://www.facebook.com/ithebk" target="_blank" onclick="handleLinkClicks(this,'Facebook');">
-				<button class="mdl-button mdl-js-button mdl-button--primary" data-upgraded=",MaterialButton">
-				Facebook
-				</button>
-				</a>
-
-
-</div>
-</div>
-</div>
 
 
 
+	<script src="js/particles.js"></script>
 
-<script src="js/particles.js"></script>
 
-
-	  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-  <script src="js/main.js"></script>
+	<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>
