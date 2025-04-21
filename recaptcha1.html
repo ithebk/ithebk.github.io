@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>reCAPTCHA v3 Triggered by Native</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lf0Vh8rAAAAAHe2eKBCN1RtGXTIJn3SEuPdleGJ"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LecQh8rAAAAAChj34bWdqwN52gPlQGKqQMJ4iN1"></script>
     <script>
         function runRecaptcha() {
             grecaptcha.ready(function () {
-                grecaptcha.execute('6Lf0Vh8rAAAAAHe2eKBCN1RtGXTIJn3SEuPdleGJ', { action: 'from_native_button' }).then(function (token) {
+                grecaptcha.execute('6LecQh8rAAAAAChj34bWdqwN52gPlQGKqQMJ4iN1', { action: 'from_native_button' }).then(function (token) {
                     Android.onTokenReceived(token); // Send token to Android
                 });
             });
