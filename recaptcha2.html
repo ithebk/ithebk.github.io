@@ -6,7 +6,7 @@
     <script>
         function runRecaptcha() {
             grecaptcha.ready(function () {
-                grecaptcha.execute('6LecQh8rAAAAAChj34bWdqwN52gPlQGKqQMJ4iN1', { action: 'from_native_button' }).then(function (token) {
+                grecaptcha.execute('6LecQh8rAAAAAChj34bWdqwN52gPlQGKqQMJ4iN1', { action: 'LOGIN' }).then(function (token) {
                     Android.onTokenReceived(token); // Send token to Android
                 });
             });
