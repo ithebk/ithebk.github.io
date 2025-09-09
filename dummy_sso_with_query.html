@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy SSO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 16px;
+            background: #f9f9f9;
+        }
+        h2 {
+            margin-bottom: 24px;
+            text-align: center;
+            color: #333;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 320px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dummy OAuth Login</h2>
+    <button onclick="redirectBack()">Authorize</button>
+
+    <script>
+        function redirectBack() {
+            // Replace with your app's callback scheme
+            window.location.href = "zeta://ciscoLoginCallback?code=67af2a53d3424b4b945b463af5d989ae&state=8bb0710c-820c-46f7-b9df-fc1d31b293b3";
+        }
+    </script>
+</body>
+</html>
