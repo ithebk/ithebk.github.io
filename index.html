@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharath Kumar - Senior Software Engineer</title>
+    <title>Bharath Kumar - Senior Mobile Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Spectral:wght@300;400&display=swap" rel="stylesheet">
@@ -24,6 +24,34 @@
             --serif: 'Spectral', serif;
         }
 
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --fg: #e8e8e8;
+                --accent: #0066ff;
+                --muted: #999;
+                --border: #333;
+            }
+        }
+
+        /* Manual theme overrides */
+        [data-theme="light"] {
+            --bg: #fafafa;
+            --fg: #1a1a1a;
+            --accent: #0066ff;
+            --muted: #666;
+            --border: #e0e0e0;
+        }
+
+        [data-theme="dark"] {
+            --bg: #1a1a1a;
+            --fg: #e8e8e8;
+            --accent: #0066ff;
+            --muted: #999;
+            --border: #333;
+        }
+
         body {
             font-family: var(--serif);
             background: var(--bg);
@@ -31,6 +59,38 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--fg);
+            transition: stroke 0.3s ease;
         }
 
         .container {
@@ -46,7 +106,7 @@
         }
 
         header {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
             padding-bottom: 2rem;
             border-bottom: 1px solid var(--border);
         }
@@ -128,7 +188,7 @@
         }
 
         section {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
             opacity: 0;
             animation: fadeInUp 0.6s ease forwards;
         }
@@ -137,6 +197,8 @@
         section:nth-child(2) { animation-delay: 0.7s; }
         section:nth-child(3) { animation-delay: 0.8s; }
         section:nth-child(4) { animation-delay: 0.9s; }
+        section:nth-child(5) { animation-delay: 1.0s; }
+        section:nth-child(6) { animation-delay: 1.1s; }
 
         @keyframes fadeInUp {
             from {
@@ -297,12 +359,24 @@
 
         /* Mobile Optimizations */
         @media (max-width: 640px) {
+            .theme-toggle {
+                top: 1.25rem;
+                right: 1.25rem;
+                width: 40px;
+                height: 40px;
+            }
+
+            .theme-toggle svg {
+                width: 18px;
+                height: 18px;
+            }
+
             .container {
                 padding: 2rem 1.25rem;
             }
 
             header {
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
 
             .title {
@@ -319,7 +393,7 @@
             }
 
             section {
-                margin-bottom: 3rem;
+                margin-bottom: 2.5rem;
             }
 
             .links {
@@ -344,58 +418,137 @@
     </style>
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+        <svg class="moon-icon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+    </button>
+
     <div class="container">
         <header>
             <h1>Bharath Kumar</h1>
-            <div class="title">Senior Software Engineer</div>
-            <div class="subtitle">Bangalore, India</div>
+            <div class="title">Senior Mobile Engineer</div>
+            <div class="subtitle">9.5+ years building scalable mobile applications</div>
             
             <nav>
-                <a href="#experience">Experience</a>
                 <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
                 <a href="#posts">Posts</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
 
         <main>
+            <section id="about">
+                <h2>About</h2>
+                <p class="about-text">
+                    Senior Mobile Engineer with 9.5+ years of experience building and scaling applications in Payments, Banking, Employee Benefits, CRM, and EdTech domains. Proven track record in Android platform modernization, SDK upgrades, modular architecture, and mentoring engineers to deliver high-quality mobile products at scale.
+                </p>
+                <p class="about-text" style="margin-top: 1rem;">
+                    Specialized in Kotlin, Java, React Native, and modern Android development with Jetpack Compose, Clean Architecture, and MVVM patterns. Experience includes leading migration efforts, designing shared modules, and implementing offline-first experiences with performance optimization.
+                </p>
+            </section>
+
             <section id="experience">
                 <h2>Experience</h2>
                 
                 <div class="experience-item">
                     <div class="experience-title">
-                        Software Engineer at <a href="https://www.zeta.tech/in/" class="experience-company" target="_blank" rel="noopener">Zeta</a>
+                        Software Development Engineer 3 at <a href="https://www.zeta.tech/in/" class="experience-company" target="_blank" rel="noopener">Zeta</a>
                     </div>
-                    <div class="experience-date">May 2022 - Present</div>
+                    <div class="experience-date">Jun 2023 - Present</div>
+                    <p class="about-text" style="margin-top: 0.75rem; font-size: 0.95rem;">
+                        Leading Android migration efforts for Pluxee India & Philippines. Upgraded Kotlin, AGP, and compileSdk for modern toolchains. Designed android-shared Git sub-module to reduce code duplication across apps.
+                    </p>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-title">
-                        Software Engineer at <a href="https://www.icicilombard.com/" class="experience-company" target="_blank" rel="noopener">ICICI Lombard</a>
+                        Software Development Engineer 2 at <a href="https://www.zeta.tech/in/" class="experience-company" target="_blank" rel="noopener">Zeta</a>
                     </div>
-                    <div class="experience-date">Nov 2019 - Apr 2022</div>
+                    <div class="experience-date">May 2022 - May 2023</div>
+                    <p class="about-text" style="margin-top: 0.75rem; font-size: 0.95rem;">
+                        Developed core features for PayZapp (HDFC Bank) including Cards, Wallet, AutoPay, Recharge. Led migration from React Native to native Android for improved stability and performance.
+                    </p>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-title">
-                        Android Engineer at <a href="http://www.autoninja.net" class="experience-company" target="_blank" rel="noopener">Autoninja</a>
+                        Senior Software Engineer at <a href="http://www.autoninja.net" class="experience-company" target="_blank" rel="noopener">Unbox Technologies</a>
                     </div>
-                    <div class="experience-date">Jun 2016 - Oct 2019</div>
+                    <div class="experience-date">Apr 2019 - Apr 2022</div>
+                    <p class="about-text" style="margin-top: 0.75rem; font-size: 0.95rem;">
+                        Owned end-to-end mobile development for NinjaCRM. Introduced React Native and CodePush for faster cross-platform delivery. Designed offline-first experiences using Realm DB.
+                    </p>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-title">
-                        B.E (CSE) from <a href="https://www.pes.edu" class="experience-company" target="_blank" rel="noopener">PES Institute of Technology</a>
+                        Software Engineer at <a href="http://www.autoninja.net" class="experience-company" target="_blank" rel="noopener">Unbox Technologies</a>
+                    </div>
+                    <div class="experience-date">Jun 2016 - Mar 2019</div>
+                </div>
+
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-title">
+                        B.E (Computer Science) from <a href="https://www.pes.edu" class="experience-company" target="_blank" rel="noopener">PES Institute of Technology</a>
                     </div>
                     <div class="experience-date">2012 - 2016</div>
                 </div>
             </section>
 
-            <section id="about">
-                <h2>About</h2>
-                <p class="about-text">
-                    Software Developer specializing in Android development. Built B2B app <a href="https://play.google.com/store/apps/details?id=com.salescrm.telephony" style="color: var(--accent); text-decoration: none;" target="_blank" rel="noopener">Sales CRM</a> from scratch at Autoninja, taking ownership of the app architecture to empower sales in car dealerships. Published <a href="https://play.google.com/store/apps/details?id=easydo.ithebk" style="color: var(--accent); text-decoration: none;" target="_blank" rel="noopener">Easy Do</a> app for Android with 10K+ downloads and 4.5★ rating, helping users make daily tasks easier.
-                </p>
+            <section id="projects">
+                <h2>Projects</h2>
+                
+                <div class="post-item">
+                    <div class="post-title">
+                        <a href="https://www.kadmik.in/" target="_blank" rel="noopener">Kadmik - Gamified Exam Prep App</a>
+                    </div>
+                    <p class="about-text" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                        Founding team member responsible for product development, app architecture, and UX for a government exam prep app. 10L+ downloads.
+                    </p>
+                    <div class="post-tags" style="margin-top: 0.5rem;">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Product</span>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="post-title">
+                        <a href="https://play.google.com/store/apps/details?id=com.moneymanager.ithebk" target="_blank" rel="noopener">Money Manager - Personal Finance App</a>
+                    </div>
+                    <p class="about-text" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                        Independently designed and developed a feature-rich personal finance app with budgeting, analytics, export capabilities, and customization options. 50K+ downloads.
+                    </p>
+                    <div class="post-tags" style="margin-top: 0.5rem;">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Finance</span>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="post-title">
+                        <a href="https://github.com/ithebk/BarChart" target="_blank" rel="noopener">BarChart - Android Library</a>
+                    </div>
+                    <p class="about-text" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                        Customizable vertical and horizontal bar chart library with animation support.
+                    </p>
+                    <div class="post-tags" style="margin-top: 0.5rem;">
+                        <span class="tag">Android</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                </div>
             </section>
 
             <section id="posts">
@@ -431,15 +584,19 @@
                         bharath7242@gmail.com
                     </div>
                     <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        (+91) 9972705071
+                    </div>
+                    <div class="contact-item">
                         <span class="contact-label">Location</span>
                         Bangalore, India
                     </div>
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/ithebk/ithebk.github.io/raw/88dc5dfec8a557c8ea9e3a3bcdd1a529a3648c3d/docs/MinimalResume2021.pdf" class="link-item" target="_blank" rel="noopener">Resume</a>
+                    <a href="https://docs.google.com/document/d/1AEaFWoOm2EsCvbNy7hrfrrqEmDydYK75OYaeapk8ECw/edit?usp=sharing" class="link-item" target="_blank" rel="noopener">Resume</a>
                     <a href="mailto:bharath7242@gmail.com" class="link-item">Mail</a>
-                    <a href="https://play.google.com/store/apps/details?id=easydo.ithebk" class="link-item" target="_blank" rel="noopener">Play Store</a>
+                    <a href="https://play.google.com/store/apps/dev?id=7732158698743494041" class="link-item" target="_blank" rel="noopener">Play Store</a>
                     <a href="https://www.linkedin.com/in/ithebk" class="link-item" target="_blank" rel="noopener">LinkedIn</a>
                     <a href="https://github.com/ithebk" class="link-item" target="_blank" rel="noopener">Github</a>
                     <a href="https://stackoverflow.com/users/4491620/bharath-kumar" class="link-item" target="_blank" rel="noopener">Stack Overflow</a>
@@ -451,5 +608,59 @@
             © 2025 Bharath Kumar
         </footer>
     </div>
+
+    <script>
+        // Theme switching functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Set initial theme
+        if (savedTheme) {
+            html.setAttribute('data-theme', savedTheme);
+            updateIcon(savedTheme);
+        } else if (systemPrefersDark) {
+            html.setAttribute('data-theme', 'dark');
+            updateIcon('dark');
+        } else {
+            html.setAttribute('data-theme', 'light');
+            updateIcon('light');
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        // Update icon based on theme
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                const newTheme = e.matches ? 'dark' : 'light';
+                html.setAttribute('data-theme', newTheme);
+                updateIcon(newTheme);
+            }
+        });
+    </script>
 </body>
 </html>
