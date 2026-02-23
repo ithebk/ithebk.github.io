@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .upi-btn {
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #1a73e8;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .upi-btn:active {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="upi-btn"
+        onclick="window.location.href='upi://pay?pa=bs.upiqr@ccavenue&pn=SODEXO%20SVC%20INDIA%20PRIVATE%20LIMITED&tr=315013881828&am=100.0&cu=INR&mc=5968'">
+        Pay ₹100 via UPI
+    </button>
+
+</body>
+</html>
