@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Options</title>
+    <title>UPI Payment Options</title>
 
     <style>
         body {
@@ -17,10 +17,10 @@
         }
 
         .btn {
-            width: 280px;
-            padding: 16px;
-            margin: 10px 0;
-            font-size: 16px;
+            width: 300px;
+            padding: 15px;
+            margin: 8px 0;
+            font-size: 15px;
             font-weight: bold;
             color: #fff;
             border: none;
@@ -28,10 +28,13 @@
             cursor: pointer;
         }
 
-        .upi { background-color: #1a73e8; }
-        .gpay { background-color: #34a853; }
-        .cred { background-color: #000000; }
-        .pluxee { background-color: #e91e63; }
+        .upi     { background: #1a73e8; }
+        .bhim    { background: #ff6f00; }
+        .gpay    { background: #34a853; }
+        .phonepe { background: #5f259f; }
+        .paytm   { background: #002970; }
+        .cred    { background: #000000; }
+         .pluxee { background-color: #e91e63; }
 
         .btn:active {
             opacity: 0.85;
@@ -40,10 +43,16 @@
 </head>
 <body>
 
-    <!-- Any UPI -->
+    <!-- General UPI -->
     <button class="btn upi"
         onclick="window.location.href='upi://pay?pa=bs.upiqr@ccavenue&pn=SODEXO%20SVC%20INDIA%20PRIVATE%20LIMITED&tr=315013881828&am=100.0&cu=INR&mc=5968'">
-        Pay ₹100 via UPI
+        Pay ₹100 via Any UPI
+    </button>
+
+    <!-- BHIM -->
+    <button class="btn bhim"
+        onclick="window.location.href='bhim://upi/pay?pa=bs.upiqr@ccavenue&pn=SODEXO%20SVC%20INDIA%20PRIVATE%20LIMITED&tr=315013890727&am=100.0&cu=INR&mc=5968'">
+        Pay with BHIM
     </button>
 
     <!-- Google Pay -->
@@ -52,13 +61,25 @@
         Pay with Google Pay
     </button>
 
+    <!-- PhonePe -->
+    <button class="btn phonepe"
+        onclick="window.location.href='phonepe://pay?pa=bs.upiqr@ccavenue&pn=SODEXO%20SVC%20INDIA%20PRIVATE%20LIMITED&tr=315013890727&am=100.0&cu=INR&mc=5968'">
+        Pay with PhonePe
+    </button>
+
+    <!-- Paytm -->
+    <button class="btn paytm"
+        onclick="window.location.href='paytmmp://pay?pa=bs.upiqr@ccavenue&pn=SODEXO%20SVC%20INDIA%20PRIVATE%20LIMITED&tr=315013890727&am=100.0&cu=INR&mc=5968'">
+        Pay with Paytm
+    </button>
+
     <!-- CRED -->
     <button class="btn cred"
         onclick="window.location.href='credpay://upi/pay?pa=bs.upiqr@ccavenue&pn=SODEXO%20SVC%20INDIA%20PRIVATE%20LIMITED&tr=315013882743&am=1.0&cu=INR&mc=5968'">
         Pay with CRED
     </button>
 
-    <!-- Pluxee External Link -->
+     <!-- Pluxee External Link -->
     <button class="btn pluxee"
         onclick="window.location.href='https://consumers.uat.pluxee.in/consumerloading'">
         Open Pluxee
