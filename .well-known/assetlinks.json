@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.test.wvharness",
+      "sha256_cert_fingerprints": [
+        "93:FA:0C:F1:20:32:BD:A6:9E:45:F4:40:66:DF:65:B1:3F:14:70:BF:25:EC:BB:DF:7A:12:49:E5:DE:CB:D6:5B"
+      ]
+    }
+  }
+]
